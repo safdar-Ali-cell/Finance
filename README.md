@@ -15,7 +15,7 @@ Build smarter stock market chatbots with ease.
 
 **Why Use Meyka API?** 
 
-Meyka API lets you create chatbots that answer user questions naturally, provide actionable insights, and enhance user engagement—without paying for multiple data sources.
+Meyka API lets you create chatbots that answer user questions naturally, provide actionable insights, and enhance user engagement without paying for multiple data sources.
 
 **Quick Start**
 
