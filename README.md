@@ -1,7 +1,7 @@
 
 **Meyka API**
 
-**Build smarter stock market chatbots with ease.**
+Build smarter stock market chatbots with ease.
 
 [Meyka API](https://api.meyka.com/) provides developers with real-time stock data, AI-driven stock grades, price forecasts, and social sentiment analysis—all in one powerful API.
 
