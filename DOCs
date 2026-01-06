@@ -1,0 +1,108 @@
+Meyka AI Chatbot API 🚀
+
+Build intelligent, real-time conversational AI for financial insights and stock analysis.
+
+📄 Documentation
+ | 🔑 Get API Key
+
+🌟 Features
+
+Multi-model AI support: GPT
+, Claude
+, DeepSeek
+
+Real-time streaming responses (SSE)
+
+Secure API key authentication
+
+Manage chats, messages, and conversation context
+
+Easy integration with Python
+, JavaScript
+, and cURL
+
+Ideal for fintech apps
+, trading platforms
+, and investment tools
+
+🔥 What You Can Build
+
+AI chat agents that analyze stock trends
+
+Conversational trading advisors
+
+24/7 market Q&A bots
+
+Tools delivering intelligent investment insights
+
+⚡ Quick Start
+Python Example
+import requests
+
+API_KEY = "YOUR_API_KEY"
+headers = {"Authorization": f"Bearer {API_KEY}"}
+
+# Create a chat
+response = requests.post(
+    "https://api.meyka.com/api/v1/chats/",
+    headers=headers,
+    json={"model_used": "gpt-4o-mini"}
+)
+chat_id = response.json()["id"]
+
+# Send a stock query
+resp = requests.post(
+    f"https://api.meyka.com/api/v1/messages/{chat_id}/send/",
+    headers=headers,
+    json={"content": "Analyze Tesla stock"}
+)
+print(resp.json()["ai_message"])
+
+JavaScript Example
+const axios = require('axios');
+
+const API_KEY = 'YOUR_API_KEY';
+const headers = { Authorization: `Bearer ${API_KEY}` };
+
+// Create a chat
+const createChat = async () => {
+  const res = await axios.post(
+    'https://api.meyka.com/api/v1/chats/',
+    { model_used: 'gpt-4o-mini' },
+    { headers }
+  );
+  return res.data.id;
+};
+
+// Send a message
+const sendMessage = async (chatId, message) => {
+  const res = await axios.post(
+    `https://api.meyka.com/api/v1/messages/${chatId}/send/`,
+    { content: message },
+    { headers }
+  );
+  console.log(res.data.ai_message);
+};
+
+(async () => {
+  const chatId = await createChat();
+  await sendMessage(chatId, 'Analyze Tesla stock');
+})();
+
+📖 Documentation
+
+Full API reference and endpoints: https://api.meyka.com/docs/
+
+💡 Why Meyka?
+
+Fast and reliable AI responses
+ for real-time trading decisions
+
+Flexible multi-model support
+
+Streamlined developer experience
+ with examples and SSE streaming
+
+⚙️ License
+
+MIT License © 2026
